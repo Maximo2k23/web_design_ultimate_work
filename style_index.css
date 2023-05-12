@@ -228,6 +228,7 @@ nav{
     width: 100%;
     object-fit: cover;
     box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10%;
 }
 .tarjeta .icon{
     padding: 5%;
@@ -471,7 +472,7 @@ nav{
         width: 100%;
     }
     .bloque5-contenedor{
-        width: 60%;
+        width: 85%;
         margin-top: 10%;
     }
 }
