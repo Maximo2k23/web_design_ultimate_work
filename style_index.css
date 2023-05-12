@@ -1,0 +1,479 @@
+*{
+    padding: 0;
+    margin: 0;    
+    list-style: none;
+    font-family: 'Emilys Candy', cursive;
+    scroll-behavior: smooth;
+}
+body{
+    background-image: linear-gradient(
+        to bottom right,
+        #3959F6 0%,
+        #316DD4 20%,
+        #42A3EB 40%,
+        #38B1D6 60%,
+        #27a1a5 80%
+    );
+    background-size: 200% 200%;
+    animation: movimiento 5s linear infinite alternate;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+@keyframes movimiento {
+    from {
+        background-position: 0 0;
+    }
+    to{
+        background-position: 100% 100%;
+    }
+}
+
+/* barra de navegacion */
+
+header{
+    background-image: url(imagenes/background/pagina1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 15px 18px rgba(0, 0, 0, 0.5);
+}
+nav{
+    background: rgb(0,0 ,0,0.5 ) !important;
+}
+.navbar-brand img{
+    width: 150px;
+}
+.navbar-nav .nav-item a{
+    color: white !important;
+}
+.navbar-nav .nav-item a:hover{
+    text-decoration: underline;
+}
+.navbar-nav{
+    text-align: end !important;
+}
+#navbarNav{
+    justify-content: end ;
+}
+
+/* bloque 1 */
+
+.bloque1{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bloque1 .contenedor-blo1{
+    margin: 5%;
+    width: 80%;
+    height: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.bloque1 span{
+    color: white;
+    font-size: 30px;
+}
+.titulo span{
+    color: white ; 
+    font-size: 70px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.boton-cont a{
+    margin: auto;
+    width: 250px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    border: solid 1px white;
+    transition: 0.5s ease;
+    color: white;
+    font-size: 30px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+}
+
+.boton-cont a:hover{
+    background-color: white;
+    color: black;
+}
+
+/* bloque 2 */
+
+.bloque2{
+    width: 100vw;
+    height: 100vh;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2% 0 2%;
+}
+.contenedor-blo2{
+    display: flex;
+    width: 100%;
+    height: 70%;
+    background: transparent;
+}
+.contenedor-img{
+    width: 50%;
+    display: flex;
+}
+.contenedor-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.contenedor-text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 50px 0 50px;
+}
+.contenedor-text span{
+    text-align: center;
+    overflow: hidden;
+    color: white;
+    font-size: 1.5em;
+}
+.contenedor-text h2{
+    text-align: center;
+    color: white;
+    font-size: 4em;
+}
+.contenedor-text a{
+    text-decoration: none;
+    background-color: transparent;
+    width: 250px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    border: solid 1px white;
+    transition: 0.5s ease;
+    color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 30px;
+}
+
+.contenedor-text a:hover{
+    background-color: white;
+    color: black;
+}
+
+/* bloque 3 */
+
+.bloque3{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    text-shadow: 8px 8px 10px rgba(0, 0, 0, 0.5);
+}
+.contenedor-blo3{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2%;
+    flex-wrap: wrap;
+    margin-bottom: 5%;
+}
+.tarjeta{
+    width: 23%;
+    height: 100%;
+    border: 2px solid black;
+    border-radius: 10%;
+    padding: 2%;
+    box-sizing: border-box;
+    transition: 0.5s ease;
+    min-width: 350px;
+    margin-bottom: 2%;
+    background: rgba(192, 189, 189, 0.274);
+}
+.tarjeta:hover{
+    background: white;
+    color: black;
+}
+.tarjeta-caja1{
+    height: 30%;
+    text-align: center;
+}
+.tarjeta-caja2{
+    height: 70%;
+    display: flex;
+    justify-content: center;
+}
+.tarjeta img{
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.5);
+}
+.tarjeta .icon{
+    padding: 5%;
+    font-size: 80px;
+    border: 3px solid black;
+    border-radius: 30px;
+    transition: 0.5s ease;
+}
+.tarjeta .icon img{
+    box-shadow: none;
+}
+.tarjeta .icon:hover{
+    border: 3px solid rgb(255, 255, 255);
+    background: white;
+}
+.contenedor-blo3 :nth-child(3){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: none;
+}
+.tarjeta-caja1 h3{
+    font-size: 40px;
+}
+.tarjeta-caja1 img{
+    width: 20px;
+}
+.bloque3 h2{
+    margin-top:5% ;
+    font-size: 50px;
+    color: white;
+}
+
+/* bloque4 */
+
+.bloque4{
+    width: 100vw;
+    height: 100vh;
+    padding:7% 5% 3% 5% ;    
+    z-index: 400;
+}
+.bloque4-contenedor{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(192, 189, 189, 0.274);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 15PX;
+}
+.bloque4-contenedor-titulo{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.bloque4-contenedor .fotos{
+    height: 65%;
+    width:  60%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bloque4-contenedor .cont-boton{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.cont-boton .boton{
+    text-decoration: none;
+    margin: auto;
+    background-color: transparent;
+    width: 180px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    border: solid 1px white;
+    transition: 0.5s ease;
+    color: white;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 30px;    
+}
+.cont-boton .boton:hover{
+    background-color: white;
+    color: black;
+}
+
+
+/* bloque 5 */
+
+.bloque5{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bloque5-contenedor{
+    background: rgba(192, 189, 189, 0.274);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 15PX;
+    width: 35%;
+    height: 80%;
+    margin-top: 5%;
+    padding: 2%;
+    
+}
+
+.bloque5-contenedor .titulo{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;    
+}
+
+.bloque5-contenedor .formulario{
+    width: 100%;
+    height: 80%;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white; 
+}
+.bloque5-contenedor .formulario form{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+}
+.bloque5-contenedor .formulario textarea{
+    width: 100%;
+    height: 40%;
+    border-radius: 10px;
+}
+.bloque5-contenedor .formulario input{
+    margin-bottom: 5%;
+    border-radius: 10px;
+}
+.bloque5-contenedor .formulario .boton{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    appearance: none;
+    border: none;
+}
+.bloque5-contenedor .formulario .boton button{
+    background: none;
+    appearance: none;
+    border: none;
+    color: white;
+    border: solid 1px black;
+    transition: 0.5s ease;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 30px; 
+    padding: 2%;
+    border-radius: 10px;
+}
+.bloque5-contenedor .formulario .boton button:hover{
+    background-color: white;
+    color: black;
+}
+
+
+/* pie de pagina */
+
+.pie-pagina{
+    width: 100vw;
+    height: 30vh;
+    background: rgb(11, 16, 39);
+    display: flex;
+    flex-direction: column;    
+    justify-content: space-evenly;
+    color: rgba(255, 255, 255, 0.603);
+    text-align: center;
+}
+.pie-pagina a{
+    font-size: 50px;
+    text-decoration: none;
+    color: white;
+    transition: 0.5s ease;
+}
+.pie-pagina a:hover{
+    color: skyblue;
+}
+
+@media (max-width: 699px){
+    nav{
+        padding-right: 5% !important;
+    }
+    nav img{
+        height: 100%;
+        width: 100%;
+    }
+    .contenedor-blo1 span{
+        font-size: 30px;
+    }
+    .contenedor-blo1 a{
+        font-size: 30px;
+    }
+    .contenedor-blo2{
+        flex-direction: column;
+        font-size: 10px;
+    }
+    .contenedor-img{
+        width: 100%;
+        height: 50%;
+    }
+    .contenedor-text{
+        width: 100%;
+        height: 50%;
+    }
+    h1{
+        font-size: 50px;
+    }
+    .bloque2{
+        padding: 30px;
+    }
+    .contenedor-text{
+        padding: 0;
+    }
+
+    .contenedor-res{
+        display: block;
+    }
+    .bloque4-contenedor .fotos{
+        width: 100%;
+    }
+    .bloque5-contenedor{
+        width: 60%;
+        margin-top: 10%;
+    }
+}
+
+

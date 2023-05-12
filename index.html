@@ -4,49 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <link rel="stylesheet" href="styleInicio.css">
-    <title>Document</title>
-    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="boxicons.min.css">
+    <link rel="stylesheet" href="style_index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap" rel="stylesheet">
+    <script src="scrip.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 </head>
 <body>
     <header>
-        <nav>
-            <div>
-                <img src="imagenes/logo.png" alt="logo">
-            </div>
-            <div>
-                <ul class="lista-nav">
-                    <li>
-                        <a href="index.html">inicio</a>
-                    </li>
-                    <li>
-                        <a href="#bloque2">Nosotros</a>
-                    </li>
-                    <li>
-                        <a href="#bloque3">Servicios</a>
-                    </li>
-                    <li>
-                        <a href="">Nuestro trabajo</a>
-                    </li>
-                    <li>
-                        <a href="">
-                            Contactanos
-                        </a>
-                    </li>
-                </ul>
+        <nav style="background-color: rgba(0,0,0,0.5) !important;" class="navbar navbar-expand-lg bg-success bg-gradient fixed-top " id="mainNav">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white" href="index.html"><img src="imagenes/logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#secPorta">inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#secAcerca">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Nuestro trabajo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Contactanos</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
-        <section class="bloque1">            
-            <div class="titulo">
-                <span>Felicidad y diversion para todos</span>
-            </div>
-            <p>No dejes que te cuenten, vive tu propia experiencia y disfruta de nuestros eventos</p>
-            <div class="boton-cont">
-                <a href="#">Contactanos</a>
+        <section class="bloque1">
+            <div class="contenedor-blo1">
+                <div class="titulo">
+                    <span>Felicidad y diversion para todos</span> 
+                </div>
+                <span>No dejes que te cuenten, vive tu propia experiencia y disfruta de nuestros eventos</span>
+                <div class="boton-cont">
+                    <a href="#bloque5">Contactanos</a>
+                </div>
             </div>
         </section>
     </header>
@@ -58,70 +62,73 @@
             </div>
             <div class="contenedor-text">
                 <h2>¿Quienes somos?</h2>            
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium ratione rerum pariatur quam omnis, libero placeat animi cum laboriosam, temporibus odio rem commodi consectetur quis facere laborum corrupti aperiam quae.</p>
-                <a href="#">Conocenos</a>            
+                <span>Entra a la seccion y descubre todo lo que llevamos haciendo durante estos años. <br><br> (TRABAJAMOS SOLO EN EVENTOS DE CARIDAD) <br><br> SIN FINES DE LUCRO</span>
+                <a href="pagina2/index2.html">Conocenos</a>            
             </div>
         </div>
-    </section>
+    </section>    
+
     <section class="bloque3" id="bloque3">
-        <H2>Servicios</H2>
+        <h2>Servicios</h2>
         <div class="contenedor-blo3">
             <div class="tarjeta">
                 <div class="tarjeta-caja1">
-                    <i class='bx bxs-balloon bx-tada' ></i>
-                    <h3>GLOBOS</h3>
+                    <img src="" alt="">
+                    <h3>SHOWS</h3>
                 </div>
                 <div class="tarjeta-caja2">
-                    <img src="imagenes/globos.PNG">
+                    <img src="imagenes/espectaculo.jpg">
                 </div>
             </div>
             <div class="tarjeta">
                 <div class="tarjeta-caja1">
-                    <i class='bx bxs-castle bx-tada' ></i>
-                    <h3>CASTILLO</h3>
+                    <img src="" alt="">
+                    <h3>MÚSICA</h3>
                 </div>
                 <div class="tarjeta-caja2">
-                    <img src="imagenes/globos.PNG">
+                    <img src="imagenes/musica3.jpg">
                 </div>
             </div>
             <div class="tarjeta">
                 <div class="icon">
-                    <a href="#">
+                    <a href="pagina3/index3.html">
                         <img src="imagenes/+.png" alt="">
                     </a>
                 </div>
             </div>
         </div>
     </section>
+
     <section class="bloque4" id="bloque4"> 
         <div class="bloque4-contenedor">
             <div class="bloque4-contenedor-titulo">
-                <h2>Nuetro Trabajo</h2>
+                <h2>NUESTRO TRABAJO</h2>                
             </div>
             <div class="fotos">
                 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <img src="imagenes/fondo1.png" class="d-block w-100" alt="...">
+                        <img src="imagenes/1.png" class="d-block w-100" alt="...">
                       </div>
                       <div class="carousel-item">
-                        <img src="imagenes/nosotros.png" class="d-block w-100" alt="...">
+                        <img src="imagenes/2.png" class="d-block w-100" alt="...">
                       </div>
                       <div class="carousel-item">
-                        <img src="imagenes/nosotros.png" class="d-block w-100" alt="...">
+                        <img src="imagenes/3.png" class="d-block w-100" alt="...">
                       </div>
                     </div>
                   </div>
             </div>
-            <div class="boton">
-                <button>+</button>
-            </div>
+            <div class="cont-boton">
+                <a href="pagina4/index4.html" class="boton">Ver mas...</a>
+            </div>            
         </div>
     </section>
+
     <section class="bloque5" id="bloque5">
         <div class="bloque5-contenedor">
             <div class="titulo">
-                <h2>Contactanos</h2>
+                <h2>CONTACTANOS</h2>
             </div>
             <div class="formulario">
                 <form>
@@ -130,13 +137,30 @@
                     <label>E-mail</label>
                     <input type="email" placeholder="Ingrese aqui">
                     <label>Mensaje</label>
-                    <textarea placeholder="Ingrese aqui" id="xd"></textarea>
+                    <textarea placeholder="Ingrese aqui" id="xd"></textarea>                    
                 </form>
                 <div class="boton">
                     <button type="submit" id="xd">Enviar</button>
                 </div>
-            </div>
+            </div>            
         </div>
     </section>
+
+    <footer class="pie-pagina">
+        <div>
+            <p>Siguenos</p>
+            <div>Redes sociales</div>
+            <a href="" target="_blank">
+                <i class='bx bxl-instagram'></i>
+            </a>
+            <a href="" target="_blank">
+                <i class='bx bxl-facebook-circle'></i>
+            </a>
+        </div>
+        <div>
+            &copy; 2023 <b>Felicidad y diversion para todos</b> - todos los derechos reservados
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>

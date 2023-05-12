@@ -1,0 +1,221 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Emilys Candy', cursive;
+    scroll-behavior: smooth;
+}
+body{
+    background-image: linear-gradient(
+        to bottom right,
+        #5EFF8C 0%,
+        #56E856 20%,
+        #9DFF6A 40%,
+        #BCE856 60%,
+        #FFFD5E 80%
+    );
+    background-size: 200% 200%;
+    animation: movimiento 5s linear infinite alternate;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+@keyframes movimiento {
+    from {
+        background-position: 0 0;
+    }
+    to{
+        background-position: 100% 100%;
+    }
+}
+header{
+    background-image: url(../imagenes/background/pagina4.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.5);
+}
+nav{
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    justify-content: space-between;
+    z-index: 200;
+}
+.contenedor-menu{
+    position: absolute;
+    right: 10px;
+}
+
+.lista-nav{
+    text-transform:uppercase ;
+    display: flex;
+    padding-right: 10px;
+    text-align: center;
+}
+.lista-nav li{
+    margin: 20px;
+}
+.lista-nav li a{
+    font-size: 13px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border-bottom: 2px solid transparent;
+    transition: 0.7s ease;
+    text-decoration: none;
+}
+nav img{
+    width: 60%;
+}
+
+/* BLOQUE 1 */
+
+.bloque1{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bloque1 .contenedor-blo1{
+    margin: 5%;
+    width: 80%;
+    height: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.bloque1 span{
+    color: white;
+    font-size: 30px;
+}
+.titulo span{
+    color: white ; 
+    font-size: 70px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.boton-cont a{
+    margin: auto;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    border: solid 1px white;
+    transition: 0.5s ease;
+    color: white;
+    font-size: 30px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+}
+
+.boton-cont a:hover{
+    background-color: white;
+    color: black;
+
+}
+
+/* bloque 2 */
+
+.bloque2{
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3%;
+    padding-top: 8%;
+}
+.bloque2 .contenedor-blo2{
+    width: 80%;
+    margin: 0.5%;
+    background: rgb(128, 128, 128, 0.5);
+    border-radius: 15px;
+    color: white;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.bloque2 .contenedor-blo2 .titulo{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 4%;
+}
+.bloque2 .contenedor-blo2 .imagenes{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.bloque2 .contenedor-blo2 .imagenes-1{
+    min-width: 250px;
+    width: 40%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2%;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.bloque2 .contenedor-blo2 .imagenes .imagenes-1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* pie de pagina */
+
+.pie-pagina{
+    width: 100vw;
+    height: 30vh;
+    background: rgb(11, 16, 39);
+    display: flex;
+    flex-direction: column;    
+    justify-content: space-evenly;
+    color: rgba(255, 255, 255, 0.603);
+    text-align: center;
+}
+.pie-pagina a{
+    font-size: 50px;
+    text-decoration: none;
+    color: white;
+    transition: 0.5s ease;
+}
+.pie-pagina a:hover{
+    color: rgb(135, 235, 160);
+}
+
+@media (max-width: 699px){
+    nav{
+        padding-right: 5% !important;
+    }
+    nav img{
+        height: 100%;
+        width: 100%;
+    }
+    .contenedor-blo1 span{
+        font-size: 30px;
+    }
+    .contenedor-blo1 a{
+        font-size: 30px;
+    }
+}

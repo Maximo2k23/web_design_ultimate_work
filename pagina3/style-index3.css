@@ -1,0 +1,225 @@
+*{
+    padding: 0;
+    margin: 0;    
+    list-style: none;
+    font-family: 'Emilys Candy', cursive;
+    scroll-behavior: smooth;
+}
+body{
+    background-image: linear-gradient(
+        to bottom right,
+        #FFFA59 0%,
+        #E8D451 20%,
+        #FFDC67 40%,
+        #E8B651 60%,
+        #FFB659 80%
+    );
+    background-size: 200% 200%;
+    animation: movimiento 5s linear infinite alternate;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+@keyframes movimiento {
+    from {
+        background-position: 0 0;
+    }
+    to{
+        background-position: 100% 100%;
+    }
+}
+
+/* barra de navegacion */
+header{
+    background-image: url(../imagenes/background/pagina3.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.5);
+}
+nav{
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    justify-content: space-between;
+    z-index: 200;
+}
+.contenedor-menu{
+    position: absolute;
+    right: 10px;
+
+}
+
+.lista-nav{
+    text-transform:uppercase ;
+    display: flex;
+    padding-right: 10px;
+    text-align: center;
+}
+.lista-nav li{
+    margin: 20px;
+}
+.lista-nav li a{
+    font-size: 13px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border-bottom: 2px solid transparent;
+    transition: 0.7s ease;
+    text-decoration: none;
+}
+nav img{
+    width: 60%;
+}
+
+
+/* bloque 1 */
+
+.bloque1{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bloque1 .contenedor-blo1{
+    margin: 5%;
+    width: 80%;
+    height: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.bloque1 span{
+    color: white;
+    font-size: 30px;
+}
+.titulo span{
+    color: white ; 
+    font-size: 70px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.boton-cont a{
+    margin: auto;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    border: solid 1px white;
+    transition: 0.5s ease;
+    color: white;
+    font-size: 30px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+}
+
+.boton-cont a:hover{
+    background-color: white;
+    color: black;
+
+}
+
+/* bloque2 */
+
+.bloque2{
+    padding: 8% 10% 10% 10%;
+}
+
+.subtitulo{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+
+}
+.contenedor-servicio{
+    width: 100%;
+    display: flex;    
+}
+
+.contenedor-servicio-2{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    
+}
+.caja{
+    width: 50%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.caja-text{
+    padding: 5%;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.bloque2 img{
+    width: 100%;
+    height: 100%;
+}
+
+/* pie de pagina */
+
+.pie-pagina{
+    width: 100vw;
+    height: 30vh;
+    background: rgb(11, 16, 39);
+    display: flex;
+    flex-direction: column;    
+    justify-content: space-evenly;
+    color: rgba(255, 255, 255, 0.603);
+    text-align: center;
+}
+.pie-pagina a{
+    font-size: 50px;
+    text-decoration: none;
+    color: white;
+    transition: 0.5s ease;
+}
+.pie-pagina a:hover{
+    color: rgb(225, 235, 135);
+}
+
+@media (max-width: 600px){
+    .contenedor-servicio, .contenedor-servicio-2{
+        flex-direction: column;        
+    }
+    .caja{
+        width: 100%;
+        height: 25vh;
+    }    
+    .contenedor-logo{
+        width: 40%;
+    }
+    .contenedor-blo1 span{
+        font-size: 30px;
+    }
+    .contenedor-blo1 a{
+        font-size: 30px;
+    }
+}
